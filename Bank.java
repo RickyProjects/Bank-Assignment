@@ -4,6 +4,7 @@ import java.util.List;
 public class Bank {
     private String name;
     private List<Client> clients = new ArrayList<>();
+    private List<Account> accounts = new ArrayList<>();
 
     public Bank(String name) {
         this.name = name;
@@ -25,6 +26,10 @@ public class Bank {
     
     public List<Client> listClients() {
         return clients;
+    }
+
+    public List<Account> listAccounts() {
+        return accounts;
     }
 
 }

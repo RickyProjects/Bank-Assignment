@@ -12,4 +12,9 @@ public class SavingsAccount extends Account{
         balance *= interestRate;
     }
 
+    public String toString() {
+        return "[" + "Savings Account #" + getAccountNumber() + " | Balance: $" + balance + " | Interest: " + interestRate + "]";
+    }
+
+
 }

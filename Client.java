@@ -18,6 +18,7 @@ public abstract class Client {
     public void addAccount(Account a) {
         if (!accounts.contains(a)) {
             accounts.add(a);
+            
         } else {
             System.out.println("Error: Account already exists.");
         }
@@ -32,4 +33,9 @@ public abstract class Client {
     public List<Account> listAccounts() {
         return accounts;
     }
+
+    public String toString() {
+        return "Client ID: " + clientId + ", Name: " + legalName;
+    }
+
 }

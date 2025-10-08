@@ -16,4 +16,8 @@ public class LoanAccount extends Account{
         principal -= amount;
     }
 
+    public String toString() {
+        return "[" + "Loan Account #" + getAccountNumber() + " | Principal: $" + principal + " | Interest: " + interestRate + " | Balance: $" + balance + "]";
+    }
+
 }
